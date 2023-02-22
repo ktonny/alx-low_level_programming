@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   *_islower - checks for lower character
-  *@c
+  *@c: of type int
   *Return: 1 or 0
   */
 int _islower(int c)
@@ -10,7 +10,7 @@ int _islower(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
