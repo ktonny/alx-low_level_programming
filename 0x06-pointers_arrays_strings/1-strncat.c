@@ -2,8 +2,9 @@
 /**
   *_strncat -  concatenates two strings.
   *@dest: desti string
-  *@src: string
-  *Return: char *
+  *@src: strin
+  * @n: specifies to the number bytes
+  *Return: dest
   */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -15,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	for (m = 0; m < n; m++)
+	for (m = 0; (m < n && src[m] != '\0'); m++)
 	{
 		dest[i] = src[m];
 		i++;
