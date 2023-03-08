@@ -2,8 +2,8 @@
 #include <stddef.h>
 /**
   *_strchr - locates acharacter in a string
-  *s: points to a string
-  *c: character
+  *@s: points to a string
+  *@c: character
   *Return: s
   */
 char *_strchr(char *s, char c)
@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 		{
-			return ((char *)s);
+			return (s);
 		}
 		s++;
 	}
