@@ -4,6 +4,11 @@
   *@s: points to a string
   *Return: void
   */
+/**
+  *_strlen - finds length of string
+  *@s: points to a string
+  *Return: int
+  */
 int _strlen(char *s)
 {
 	if (*s == '\0')
