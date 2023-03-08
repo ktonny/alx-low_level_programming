@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 	return (_sqrt(n, 1));
 }
 /**
-  *_sqrt - returns square root 
+  *_sqrt - returns square root
   *@n: int
   *@guess: int
   *Return: int
