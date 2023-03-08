@@ -6,14 +6,14 @@
   */
 int _strlen(char *s)
 {
-	int i;
-
-	i = 0;
-	while (s[i] != 0)
+	if (*s == '\0')
 	{
-		i++;
+		return (0);
 	}
-	return (i);
+	else
+	{
+		return (1 + _strlen(s + 1));
+	}
 }
 void _puts_recursion(char *s)
 {
