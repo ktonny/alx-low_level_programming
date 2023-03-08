@@ -4,11 +4,6 @@
   *@s: points to a string
   *Return: void
   */
-/**
-  *_strlen - finds length of string
-  *@s: points to a string
-  *Return: int
-  */
 int _strlen(char *s)
 {
 	if (*s == '\0')
@@ -20,6 +15,11 @@ int _strlen(char *s)
 		return (1 + _strlen(s + 1));
 	}
 }
+/**
+  *_puts_recursion - prints  a string
+  *@s: points to a string
+  *Return: void
+  */
 void _puts_recursion(char *s)
 {
 	if (_strlen(s) == 0)
