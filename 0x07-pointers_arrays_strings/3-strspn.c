@@ -1,48 +1,28 @@
 #include "main.h"
-#include "stdbool.h"
 /**
-  *_strspn - gets the length of a prefix substring
-  *s: string
-  *accept: string
-  *Return: unsigned int
-  */
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int initial_length = 0;
-	unsigned int len1;
-	unsigned int len2;
-	unsigned int i;
-	unsigned int j;
+	unsigned int n = 0;
+	int r;
 
-	len1 = 0;
-	len2 = 0;
-	while (s[len1] != 0)
+	while (*s)
 	{
-		len1++;
-	}
-	while (accept[len2] != 0)
-	{
-		len2++;
-	}
-	for (i = 0; i < len1; i++)
-	{
-		bool found_match = false;
-		for (j = 0; j < len2; j++)
+		for (r = 0; accept[r]; r++)
 		{
-			if (accept[j] == accept[i])
+			if (*s == accept[r])
 			{
-				found_match = true;
+				n++;
 				break;
 			}
+			else if (accept[r + 1] == '\0')
+				return (n);
 		}
-		if (!found_match)
-		{
-			break;
-		}
-		else
-		{
-			initial_length++;
-		}
+		s++;
 	}
-	return (initial_length);
+	return (n);
 }
