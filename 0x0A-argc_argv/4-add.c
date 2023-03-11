@@ -14,11 +14,6 @@ int main(int argc, char *argv[])
 	int sum;
 	int i;
 
-	if (argc == 1)
-	{
-		printf("0");
-		printf("\n");
-	}
 	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
