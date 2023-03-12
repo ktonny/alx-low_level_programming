@@ -23,11 +23,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	num = atoi(argv[1]);
-	if (num < 0)
-	{
-		printf("0");
-		printf("\n");
-	}
 	noofcoins = 0;
 	for (i = 0; i < 5 && num >= 0; i++)
 	{
