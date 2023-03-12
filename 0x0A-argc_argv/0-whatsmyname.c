@@ -3,7 +3,8 @@
 /**
   *main - a program that prints its name
   *@argc:argument count
-  *@argv - points to pointer string
+  *@argv: points to pointer string
+  *Return: 0.
   */
 int main(int argc, char *argv[])
 {
