@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+int checknum(char *s);
 /**
   *main - adds positive numbers
   *@argc: argument count
   *@argv: argument vector
-  *Return: 0
+  *Return: 0.
   */
-int checknum(char *s);
 int main(int argc, char *argv[])
 {
 	int sum;
