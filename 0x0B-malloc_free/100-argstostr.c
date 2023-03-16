@@ -42,7 +42,7 @@ char *argstostr(int ac, char **av)
 		size = _strlen(av[n]);
 		sum += size;
 	}
-	ptr = malloc(sizeof(int) * (size + 1 + ac));
+	ptr = malloc(sizeof(int) * (size + 1));
 	if (ptr == NULL)
 	{
 		return (NULL);
