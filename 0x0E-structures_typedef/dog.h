@@ -1,7 +1,7 @@
 /**
   *struct dog - dogs details
   *@name: daogs name
-  *@ages: dogs age
+  *@age: dogs age
   *@owner: dogs owner
   */
 struct dog
